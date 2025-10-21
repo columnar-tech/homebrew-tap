@@ -13,7 +13,7 @@ cask "dbc" do
 
   on_macos do
     on_intel do
-      url "https://github.com/columnar-tech/dbc/releases/downloadv#{version}/dbc-darwin-amd64-#{version}.tar.gz",
+      url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-darwin-amd64-#{version}.tar.gz",
         verified: "github.com/columnar-tech/dbc/",
         using: :homebrew_curl,
         cookies: {
@@ -22,7 +22,7 @@ cask "dbc" do
       sha256 "f00c04477c10997f48c483d95e1ebf17785ae0e7e9fb3b5ad1a9144148768b75"
     end
     on_arm do
-      url "https://github.com/columnar-tech/dbc/releases/downloadv#{version}/dbc-darwin-arm64-#{version}.tar.gz",
+      url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-darwin-arm64-#{version}.tar.gz",
         verified: "github.com/columnar-tech/dbc/",
         using: :homebrew_curl,
         cookies: {
@@ -34,7 +34,7 @@ cask "dbc" do
 
   on_linux do
     on_intel do
-      url "https://github.com/columnar-tech/dbc/releases/downloadv#{version}/dbc-linux-amd64-#{version}.tar.gz",
+      url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-linux-amd64-#{version}.tar.gz",
         verified: "github.com/columnar-tech/dbc/",
         using: :homebrew_curl,
         cookies: {
@@ -43,7 +43,7 @@ cask "dbc" do
       sha256 "32840ca901e6e0cfd8af8486d2f405a3e40df350fa6e4d087f179851ba7b2605"
     end
     on_arm do
-      url "https://github.com/columnar-tech/dbc/releases/downloadv#{version}/dbc-linux-arm64-#{version}.tar.gz",
+      url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-linux-arm64-#{version}.tar.gz",
         verified: "github.com/columnar-tech/dbc/",
         using: :homebrew_curl,
         cookies: {
