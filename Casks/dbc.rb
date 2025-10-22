@@ -14,8 +14,7 @@ cask "dbc" do
   on_macos do
     on_intel do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-darwin-amd64-#{version}.tar.gz",
-        verified: "github.com/columnar-tech/dbc/",
-        using: :homebrew_curl,
+        verified: "github.com/columnar-tech/dbc/",        
         cookies: {
           "license" => "accept-backup",
         }
