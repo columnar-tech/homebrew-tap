@@ -22,8 +22,7 @@ cask "dbc" do
     end
     on_arm do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-darwin-arm64-#{version}.tar.gz",
-        verified: "github.com/columnar-tech/dbc/",
-        using: :homebrew_curl,
+        verified: "github.com/columnar-tech/dbc/",        
         cookies: {
           "license" => "accept-backup",
         }
@@ -34,8 +33,7 @@ cask "dbc" do
   on_linux do
     on_intel do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-linux-amd64-#{version}.tar.gz",
-        verified: "github.com/columnar-tech/dbc/",
-        using: :homebrew_curl,
+        verified: "github.com/columnar-tech/dbc/",        
         cookies: {
           "license" => "accept-backup",
         }
@@ -43,8 +41,7 @@ cask "dbc" do
     end
     on_arm do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-linux-arm64-#{version}.tar.gz",
-        verified: "github.com/columnar-tech/dbc/",
-        using: :homebrew_curl,
+        verified: "github.com/columnar-tech/dbc/",        
         cookies: {
           "license" => "accept-backup",
         }
