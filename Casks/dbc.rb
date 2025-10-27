@@ -3,7 +3,7 @@ cask "dbc" do
   name "dbc"
   desc "A CLI utility for managing ADBC drivers"
   homepage "https://columnar.tech/dbc"
-  version "0.0.1-beta3"
+  version "0.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,38 +14,38 @@ cask "dbc" do
   on_macos do
     on_intel do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-darwin-amd64-#{version}.tar.gz",
-        verified: "github.com/columnar-tech/dbc/",        
+        verified: "github.com/columnar-tech/dbc/",
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "f00c04477c10997f48c483d95e1ebf17785ae0e7e9fb3b5ad1a9144148768b75"
+      sha256 "4b02adb55efb9bfe1fd4a6a520c95f9a88a831b663b115402711fd7077c6a818"
     end
     on_arm do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-darwin-arm64-#{version}.tar.gz",
-        verified: "github.com/columnar-tech/dbc/",        
+        verified: "github.com/columnar-tech/dbc/",
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "796c8299da0f0e8095343611db116852895dda6c4018ea08eb22d79e3c30ad11"
+      sha256 "35c0f7fcd83ab111911e7c001bc4095d245c895c06f55109e9cd82fe16a71090"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-linux-amd64-#{version}.tar.gz",
-        verified: "github.com/columnar-tech/dbc/",        
+        verified: "github.com/columnar-tech/dbc/",
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "32840ca901e6e0cfd8af8486d2f405a3e40df350fa6e4d087f179851ba7b2605"
+      sha256 "5d4ca5ea9b0e5246f90133bab6a5896264b9d70bc304a25ff064868cec414e10"
     end
     on_arm do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-linux-arm64-#{version}.tar.gz",
-        verified: "github.com/columnar-tech/dbc/",        
+        verified: "github.com/columnar-tech/dbc/",
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "272d1be1fb3b31830c3ef448b05748ad223637d7a522d90746fd84987bd1ec48"
+      sha256 "fda8f32e91367e8f7d8e9281cc49bd5c34b98ce22a007b83ffd901c59e024e45"
     end
   end
 
