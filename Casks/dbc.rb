@@ -3,7 +3,7 @@ cask "dbc" do
   name "dbc"
   desc "A CLI utility for managing ADBC drivers"
   homepage "https://columnar.tech/dbc"
-  version "0.1.0"
+  version "0.2.0-beta1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,7 +18,7 @@ cask "dbc" do
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "4b02adb55efb9bfe1fd4a6a520c95f9a88a831b663b115402711fd7077c6a818"
+      sha256 "282fbee5ef5b35cc1e3ede77ba6b1a4050fa7fd64606470059dab24ea197c4d1"
     end
     on_arm do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-darwin-arm64-#{version}.tar.gz",
@@ -26,7 +26,7 @@ cask "dbc" do
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "35c0f7fcd83ab111911e7c001bc4095d245c895c06f55109e9cd82fe16a71090"
+      sha256 "9a77bf44156bbac15b1b86f5b62e5697a192f3568c396c20172a9ffb092e8d1b"
     end
   end
 
@@ -37,7 +37,7 @@ cask "dbc" do
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "5d4ca5ea9b0e5246f90133bab6a5896264b9d70bc304a25ff064868cec414e10"
+      sha256 "b5f11e2787344fcf3562803e9a2ae88bc77118919a4eea3d943ed5c158814f8c"
     end
     on_arm do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-linux-arm64-#{version}.tar.gz",
@@ -45,7 +45,7 @@ cask "dbc" do
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "fda8f32e91367e8f7d8e9281cc49bd5c34b98ce22a007b83ffd901c59e024e45"
+      sha256 "b76952a8194f8c48bb2b6205fa19d5147ceddacdf7f43088d94fde79f2ef1a86"
     end
   end
 
