@@ -3,13 +3,16 @@ cask "dbc" do
   name "dbc"
   desc "A CLI utility for managing ADBC drivers"
   homepage "https://columnar.tech/dbc"
-  version "0.2.0-beta1"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "dbc"
+  bash_completion "cmd/dbc/completions/dbc.bash"
+  zsh_completion "cmd/dbc/completions/dbc.zsh"
+  fish_completion "cmd/dbc/completions/dbc.fish"
 
   on_macos do
     on_intel do
@@ -18,7 +21,7 @@ cask "dbc" do
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "282fbee5ef5b35cc1e3ede77ba6b1a4050fa7fd64606470059dab24ea197c4d1"
+      sha256 "3bccd0d0f5956ec9f488b60337636137de70f9547a79aea234e334d73ae82df0"
     end
     on_arm do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-darwin-arm64-#{version}.tar.gz",
@@ -26,7 +29,7 @@ cask "dbc" do
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "9a77bf44156bbac15b1b86f5b62e5697a192f3568c396c20172a9ffb092e8d1b"
+      sha256 "ac02c37555b8d5185c2f57eb1f2772c161a304d819d1fc1fe56137f77205398d"
     end
   end
 
@@ -37,7 +40,7 @@ cask "dbc" do
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "b5f11e2787344fcf3562803e9a2ae88bc77118919a4eea3d943ed5c158814f8c"
+      sha256 "bca1737bedde571b05768ed4c53c7ff318ba8303d359af24440d1c36dc5262e8"
     end
     on_arm do
       url "https://github.com/columnar-tech/dbc/releases/download/v#{version}/dbc-linux-arm64-#{version}.tar.gz",
@@ -45,7 +48,7 @@ cask "dbc" do
         cookies: {
           "license" => "accept-backup",
         }
-      sha256 "b76952a8194f8c48bb2b6205fa19d5147ceddacdf7f43088d94fde79f2ef1a86"
+      sha256 "afae5b706f09b17785ba34f0564e5585eaae656f2539a4bf012713d90fde2922"
     end
   end
 
