@@ -10,9 +10,6 @@ cask "dbc@0.2.0" do
   end
 
   binary "dbc"
-  bash_completion "cmd/dbc/completions/dbc.bash"
-  zsh_completion "cmd/dbc/completions/dbc.zsh"
-  fish_completion "cmd/dbc/completions/dbc.fish"
 
   on_macos do
     on_intel do
