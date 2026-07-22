@@ -6,11 +6,6 @@ class Databow < Formula
   license "Apache-2.0"
   head "https://github.com/columnar-tech/databow.git", branch: "main"
 
-  livecheck do
-    url :stable
-    strategy :github_latest
-  end
-
   depends_on "rust" => :build
 
   def install
